@@ -421,15 +421,21 @@ a {
 
 /* ==================== SEÇÃO CONTATO ==================== */
 .contato {
-    padding: 90px 0;
+    padding: 80px 0;
     background: #141414;
     border-top: 1px solid #242424;
+}
+
+.contato .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .contato-layout {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
-    gap: 50px;
+    gap: 60px;
     align-items: center;
 }
 
@@ -449,11 +455,11 @@ a {
     font-size: 0.85rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .contato-horarios {
-    margin: 15px 0 30px;
+    margin: 15px 0 25px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -474,6 +480,7 @@ a {
     font-size: 0.95rem;
     padding: 14px 28px;
     border-radius: 6px;
+    text-decoration: none;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -482,8 +489,11 @@ a {
     transform: translateY(-2px);
 }
 
+/* Benefícios (Cards à Direita) */
 .contato-beneficios {
-    list-style: none;
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -509,8 +519,14 @@ a {
 /* ==================== RODAPÉ / FOOTER ==================== */
 .footer {
     background: #0f0f0f;
-    padding: 60px 0 25px;
+    padding: 50px 0 25px;
     border-top: 1px solid #222;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-grid {
@@ -518,20 +534,21 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
 }
 
 .footer-logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
+    text-decoration: none;
 }
 
 .footer-logo span {
     color: var(--primary, #c59b27);
 }
 
-/* Localização (Mini Mapa + Texto) */
+/* Mini Mapa 3x4 + Endereço */
 .footer-localizacao {
     display: flex;
     align-items: center;
@@ -540,12 +557,13 @@ a {
 
 .mini-mapa-box {
     position: relative;
-    width: 80px;
-    height: 105px;
+    width: 75px;
+    height: 100px;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #2c2c2c;
     flex-shrink: 0;
+    display: block;
     transition: border-color 0.3s;
 }
 
@@ -555,10 +573,10 @@ a {
 
 .mini-mapa-box iframe {
     position: absolute;
-    top: -45px;
-    left: -35px;
-    width: 155px;
-    height: 195px;
+    top: -50px;
+    left: -40px;
+    width: 160px;
+    height: 200px;
     border: 0;
     pointer-events: none;
 }
@@ -570,6 +588,7 @@ a {
     color: #999;
     font-size: 0.85rem;
     line-height: 1.4;
+    text-decoration: none;
     transition: color 0.2s;
 }
 
@@ -583,12 +602,13 @@ a {
     margin-top: 3px;
 }
 
-/* Itens de Contato e Rede Social */
+/* Contato e Redes */
 .footer-item {
     display: flex;
     align-items: center;
     gap: 12px;
     color: #999;
+    text-decoration: none;
     transition: color 0.2s;
 }
 
@@ -616,20 +636,20 @@ a {
 /* Copyright Centralizado */
 .footer-bottom {
     text-align: center;
-    margin-top: 45px;
+    margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #1a1a1a;
     font-size: 0.85rem;
-    color: #555;
+    color: #666;
 }
 
-/* ==================== RESPONSIVIDADE ==================== */
+/* Responsivo */
 @media (max-width: 900px) {
     .contato-layout {
         grid-template-columns: 1fr;
         gap: 35px;
     }
-
+    
     .footer-grid {
         flex-direction: column;
         align-items: flex-start;
