@@ -419,34 +419,98 @@ a {
     color: var(--primary);
 }
 
-/* Agrupamento e espaçamento dos horários */
+/* ==================== SEÇÃO CONTATO ==================== */
+.contato {
+    padding: 90px 0;
+    background: #141414;
+    border-top: 1px solid #242424;
+}
+
+.contato-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.contato-principal h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.contato-principal h2 span {
+    color: var(--primary, #c59b27);
+}
+
+.contato-eyebrow {
+    display: block;
+    color: var(--primary, #c59b27);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
 .contato-horarios {
-    margin: 20px 0 30px; /* 20px acima, 30px abaixo afastando do botão */
+    margin: 15px 0 30px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
 }
 
 .contato-horarios p {
-    color: var(--text-muted, #a0a0a0);
+    color: #a0a0a0;
     font-size: 0.95rem;
 }
 
-/* Espaçamento interno e margem do botão */
-.contato-principal .contato-btn {
+.contato-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    margin-top: 10px; /* Garante o afastamento vertical */
+    background: var(--primary, #c59b27);
+    color: #111;
+    font-weight: 700;
+    font-size: 0.95rem;
     padding: 14px 28px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* FOOTER */
+.contato-btn:hover {
+    background: #e0b438;
+    transform: translateY(-2px);
+}
+
+.contato-beneficios {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contato-beneficios li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #1c1c1c;
+    padding: 18px 24px;
+    border-radius: 8px;
+    border: 1px solid #282828;
+    color: #e5e5e5;
+    font-size: 0.95rem;
+}
+
+.contato-beneficios i {
+    color: var(--primary, #c59b27);
+    font-size: 1.2rem;
+}
+
+/* ==================== RODAPÉ / FOOTER ==================== */
 .footer {
-    padding: 40px 0;
-    border-top: 1px solid var(--border);
+    background: #0f0f0f;
+    padding: 60px 0 25px;
+    border-top: 1px solid #222;
 }
 
 .footer-grid {
@@ -454,112 +518,121 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    font-size: 0.9rem;
-    color: var(--text-muted);
+    gap: 30px;
 }
 
 .footer-logo {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text);
+    color: #fff;
 }
 
 .footer-logo span {
-    color: var(--primary);
+    color: var(--primary, #c59b27);
 }
 
-.footer-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-item i {
-    color: var(--primary);
-    font-size: 1.1rem;
-}
-
-.footer-copy {
-    width: 100%;
-    text-align: center;
-    order: 5;
-    padding-top: 15px;
-    border-top: 1px solid var(--border);
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    #menu {
-        display: none;
-    }
-    
-    .menu-toggle {
-        display: block;
-    }
-    
-    .sobre-wrapper, .contato-layout {
-        grid-template-columns: 1fr;
-    }
-    
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-}
-/* Container que alinha o mini mapa e o texto lado a lado */
+/* Localização (Mini Mapa + Texto) */
 .footer-localizacao {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 14px;
 }
 
-/* Container 3x4 com corte das bordas para ocultar os botões do Google */
 .mini-mapa-box {
     position: relative;
-    display: block;
-    width: 90px;
-    height: 120px;
+    width: 80px;
+    height: 105px;
     border-radius: 8px;
-    overflow: hidden; /* Corta tudo o que sair do container */
-    border: 1px solid var(--border, #2a2a2a);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    border: 1px solid #2c2c2c;
     flex-shrink: 0;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    transition: border-color 0.3s;
 }
 
 .mini-mapa-box:hover {
-    transform: scale(1.04);
     border-color: var(--primary, #c59b27);
 }
 
-/* O iframe é esticado para fora das bordas, jogando o botão do Maps para fora da visualização */
 .mini-mapa-box iframe {
     position: absolute;
-    top: -45px;      /* Empurra o botão 'Maps' para fora no topo */
-    left: -35px;     /* Corta a lateral esquerda */
-    width: 160px;    /* Aumenta a área interna */
-    height: 200px;   /* Aumenta a área interna */
+    top: -45px;
+    left: -35px;
+    width: 155px;
+    height: 195px;
     border: 0;
-    pointer-events: none; /* Mantém o clique abrindo no link principal */
+    pointer-events: none;
 }
-/* Estilização do endereço de texto */
-.footer-endereco {
+
+.footer-endereco-texto {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    color: var(--text-muted, #a0a0a0);
-    text-decoration: none;
-    font-size: 0.9rem;
+    color: #999;
+    font-size: 0.85rem;
     line-height: 1.4;
-    transition: color 0.2s ease;
+    transition: color 0.2s;
 }
 
-.footer-endereco i {
+.footer-endereco-texto:hover {
     color: var(--primary, #c59b27);
-    font-size: 1.2rem;
+}
+
+.footer-endereco-texto i {
+    color: var(--primary, #c59b27);
+    font-size: 1.1rem;
     margin-top: 3px;
 }
 
-.footer-endereco:hover {
+/* Itens de Contato e Rede Social */
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #999;
+    transition: color 0.2s;
+}
+
+.footer-item i {
+    font-size: 1.3rem;
     color: var(--primary, #c59b27);
+}
+
+.footer-item small {
+    display: block;
+    font-size: 0.75rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.footer-item strong {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.footer-item:hover strong {
+    color: var(--primary, #c59b27);
+}
+
+/* Copyright Centralizado */
+.footer-bottom {
+    text-align: center;
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid #1a1a1a;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 900px) {
+    .contato-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
 }
