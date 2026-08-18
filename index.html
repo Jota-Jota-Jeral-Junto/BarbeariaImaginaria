@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barber Shop em Colatina/ES: cortes clássicos e degradê, barboterapia, camuflagem e cuidados faciais. Agende seu horário pelo WhatsApp.">
+    <meta name="theme-color" content="#121212">
+    <title>Barber Shop | Estilo, Tradição & Cuidado Masculino</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="navbar">
+        <a href="#" class="logo">Barber<span>Shop.</span></a>
+
+        <nav id="menu">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#portfolio">Cortes</a>
+            <a href="#avaliacoes">Depoimentos</a>
+            <a href="#contato">Agendar</a>
+        </nav>
+
+        <!-- Botão Dark/Light Mode -->
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema escuro">
+            <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- Botão Mobile -->
+        <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- HERO / BANNER PRINCIPAL -->
+    <section class="hero">
+        <img src="img/interior.jfif" alt="Interior da Barbearia" class="hero-image">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content reveal">
+            <h1>Barber Shop</h1>
+            <p class="subtitle">Tradição na tesoura, modernidade no estilo e atendimento exclusivo para você.</p>
+            <a href="#contato" class="btn">Agendar Horário</a>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="container reveal">
+            <div class="sobre-wrapper">
+                <div class="sobre-images reveal">
+                    <img src="img/corte1.jpg" alt="Barbeiro profissional realizando corte de cabelo" loading="lazy">
+                    <img src="img/barba e toalha.jfif" alt="Detalhe de toalha quente e barba sendo feita" loading="lazy">
+                    <img src="img/barbearia acomchegante.png" alt="Ambiente aconchegante da barbearia com cerveja e lounge" loading="lazy">
+                </div>
+
+                <div class="sobre-content reveal">
+                    <span class="sobre-eyebrow">Sobre Nossa Barbearia</span>
+                    <h2>Mais que um corte,<br>uma <span>experiência.</span></h2>
+
+                    <p class="sobre-description">
+                        Aqui unimos as técnicas clássicas da barbearia tradicional com as maiores tendências modernas. 
+                        Ambiente climatizado, café, cerveja gelada e profissionais focados em valorizar a sua melhor versão.
+                    </p>
+
+                    <ul class="sobre-diferenciais">
+                        <li>
+                            <span class="diferencial-icon" aria-hidden="true"><i class="fa-solid fa-scissors"></i></span>
+                            <span><strong>Cortes & Visagismo</strong><small>Análise do melhor estilo para o seu formato de rosto.</small></span>
+                        </li>
+                        <li>
+                            <span class="diferencial-icon" aria-hidden="true"><i class="fa-solid fa-hot-tub-person"></i></span>
+                            <span><strong>Barboterapia Completa</strong><small>Toalha quente, massagem facial e produtos premium.</small></span>
+                        </li>
+                        <li>
+                            <span class="diferencial-icon" aria-hidden="true"><i class="fa-solid fa-beer-mug-empty"></i></span>
+                            <span><strong>Espaço Lounge & Conforto</strong><small>Relaxe enquanto aguarda com bebida e boa música.</small></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="titulo centro reveal">
+                <span>Nossos Serviços</span>
+                <h2>O melhor cuidado para o seu <span>visual.</span></h2>
+            </div>
+
+            <div class="cards">
+                <article class="card service-card reveal delay-1">
+                    <div class="service-overlay">
+                        <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-scissors"></i></span>
+                        <h3>Corte Clássico & Degradê</h3>
+                        <p>Do fade moderno aos estilos tradicionais na tesoura, com finalização e lavagem.</p>
+                    </div>
+                </article>
+
+                <article class="card service-card reveal delay-2">
+                    <div class="service-overlay">
+                        <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-razor"></i></span>
+                        <h3>Barboterapia</h3>
+                        <p>Desenho perfeito da barba com toalha quente, navalha e hidratação com óleos essenciais.</p>
+                    </div>
+                </article>
+
+                <article class="card service-card reveal delay-3">
+                    <div class="service-overlay">
+                        <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-brush"></i></span>
+                        <h3>Camuflagem & Pigmentação</h3>
+                        <p>Disfarce de fios brancos e falhas na barba/cabelo com aspecto 100% natural.</p>
+                    </div>
+                </article>
+
+                <article class="card service-card reveal delay-4">
+                    <div class="service-overlay">
+                        <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-spa"></i></span>
+                        <h3>Limpeza de Pele & Black Mask</h3>
+                        <p>Tratamento facial completo para remoção de cravos e oleosidade excessiva.</p>
+                    </div>
+                </article>
+
+                <article class="card service-card delay-4 reveal">
+                    <div class="service-overlay">
+                        <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-spray-can"></i></span>
+                        <h3>Selagem & Alisamento</h3>
+                        <p>Alinhamento dos fios rebeldes garantindo praticidade no seu dia a dia.</p>
+                    </div>
+                </article>
+
+                <article class="card service-card delay-4 reveal">
+                    <div class="service-overlay">
+                        <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-child-reaching"></i></span>
+                        <h3>Corte Infantil</h3>
+                        <p>Atendimento paciente e especializado para garantir que as crianças fiquem no estilo.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFÓLIO / CARROSSEL DE CORTES -->
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-background" aria-hidden="true"></div>
+        <div class="container">
+            <div class="titulo centro reveal">
+                <span>Galeria de Trabalhos</span>
+                <h2>ESTILO QUE TRANSFORMA</h2>
+            </div>
+
+            <div class="swiper meuPortfolio reveal">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/lowfade.png" alt="Corte degradê low fade com barba alinhada" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/socialtesoura.png" alt="Corte social moderno na tesoura" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/barbanavalha.png" alt="Barba desenhada com acabamento na navalha" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/americanotexturizado.jfif" alt="Corte americano com finalização texturizada" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/barboterapia.jfif" alt="Tratamento de barboterapia finalizado" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="avaliacoes" class="pacotes avaliacoes">
+        <div class="container">
+            <div class="titulo centro reveal">
+                <span>Avaliações de Clientes</span>
+                <h2>A opinião de quem frequenta</h2>
+            </div>
+
+            <div class="avaliacoes-grid">
+                <article class="avaliacao-card reveal delay-1">
+                    <div class="avaliacao-estrelas" aria-label="5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote>“Ambiente incrível, pontualidade no horário e o fade ficou perfeito. O atendimento com a cerveja gelada é diferencial!”</blockquote>
+                    <footer><strong>Carlos Eduardo</strong><span>Corte & Barba</span></footer>
+                </article>
+
+                <article class="avaliacao-card reveal delay-2">
+                    <div class="avaliacao-estrelas" aria-label="5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote>“A barboterapia é relaxante demais. Saí renovado e com a barba alinhada como nunca. Recomendo de olhos fechados.”</blockquote>
+                    <footer><strong>Felipe Santos</strong><span>Barboterapia</span></footer>
+                </article>
+
+                <article class="avaliacao-card reveal delay-3">
+                    <div class="avaliacao-estrelas" aria-label="5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote>“Profissionais de alto nível. Encontraram o corte que combinou certinho com meu estilo. Virei cliente fiel.”</blockquote>
+                    <footer><strong>Rodrigo Martins</strong><span>Visagismo & Corte</span></footer>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FALE CONOSCO / AGENDAMENTO -->
+    <section id="contato" class="contato reveal">
+        <div class="container">
+            <div class="contato-layout">
+                <div class="contato-principal">
+                    <span class="contato-eyebrow">Agendamento Rápido</span>
+                    <h2>Pronto para renovar o seu <span>estilo</span>?</h2>
+                    <p>Agende seu horário pelo WhatsApp e garanta seu momento de cuidado.</p>
+
+                    <a class="contato-btn" target="_blank" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20barbearia.">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        Agendar no WhatsApp
+                    </a>
+                </div>
+
+                <ul class="contato-beneficios">
+                    <li>
+                        <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                        <span>Sem filas e sem espera</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-spray-can-sparkles" aria-hidden="true"></i>
+                        <span>Produtos das melhores marcas</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        <span>Profissionais certificados</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <a class="footer-logo" href="#" aria-label="Barber Shop - Início">Barber <span>Shop</span></a>
+
+            <address class="footer-item footer-endereco">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <span>Av. Getulio Vargas, 450<br>Centro - Colatina<br>ES - Brasil</span>
+            </address>
+
+            <a class="footer-item" href="tel:+5500000000000">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <span>Contato<br><strong>(27) 99999-9999</strong></span>
+            </a>
+
+            <a class="footer-item" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                <span>Instagram<br><strong>@joaopratissoli</strong></span>
+            </a>
+
+            <p class="footer-copy">© 2026 Barber Shop<br>Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+    // TEMA DARK / LIGHT
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = themeToggle.querySelector("i");
+
+    function applyTheme(theme) {
+        const isDark = theme === "dark";
+        document.body.classList.toggle("dark-theme", isDark);
+        themeIcon.classList.toggle("fa-moon", !isDark);
+        themeIcon.classList.toggle("fa-sun", isDark);
+        themeToggle.setAttribute("aria-label", isDark ? "Alternar tema claro" : "Alternar tema escuro");
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+    applyTheme(savedTheme || "dark"); // Barber geralmente fica excelente iniciando no Dark
+
+    themeToggle.addEventListener("click", () => {
+        const nextTheme = document.body.classList.contains("dark-theme") ? "light" : "dark";
+        localStorage.setItem("theme", nextTheme);
+        applyTheme(nextTheme);
+    });
+
+    // MENU MOBILE
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        const icon = menuToggle.querySelector("i");
+        const isActive = menu.classList.contains("active");
+
+        icon.classList.toggle("fa-bars", !isActive);
+        icon.classList.toggle("fa-xmark", isActive);
+        document.body.style.overflow = isActive ? "hidden" : "auto";
+    });
+
+    document.querySelectorAll("#menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("active");
+            const icon = menuToggle.querySelector("i");
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+            document.body.style.overflow = "auto";
+        });
+    });
+
+    // SCROLL REVEAL COM INTERSECTION OBSERVER (Otimizado)
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, { threshold: 0.15 });
+
+    reveals.forEach(el => observer.observe(el));
+
+    // CARROSSEL SWIPER
+    const swiper = new Swiper(".meuPortfolio", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+                centeredSlides: true,
+                spaceBetween: 15
+            },
+            768: {
+                slidesPerView: 3,
+                centeredSlides: false,
+                spaceBetween: 25
+            }
+        }
+    });
+    </script>
+</body>
+</html>
