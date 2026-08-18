@@ -513,13 +513,14 @@ a {
     gap: 15px;
 }
 
-/* Formato 3x4 com tamanho compacto */
+/* Container 3x4 com corte das bordas para ocultar os botões do Google */
 .mini-mapa-box {
+    position: relative;
     display: block;
     width: 90px;
-    height: 120px; /* Proporção 3x4 */
+    height: 120px;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: hidden; /* Corta tudo o que sair do container */
     border: 1px solid var(--border, #2a2a2a);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     flex-shrink: 0;
@@ -531,13 +532,16 @@ a {
     border-color: var(--primary, #c59b27);
 }
 
+/* O iframe é esticado para fora das bordas, jogando o botão do Maps para fora da visualização */
 .mini-mapa-box iframe {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: -45px;      /* Empurra o botão 'Maps' para fora no topo */
+    left: -35px;     /* Corta a lateral esquerda */
+    width: 160px;    /* Aumenta a área interna */
+    height: 200px;   /* Aumenta a área interna */
     border: 0;
-    pointer-events: none; /* Mantém o clique abrindo a aba do Maps */
+    pointer-events: none; /* Mantém o clique abrindo no link principal */
 }
-
 /* Estilização do endereço de texto */
 .footer-endereco {
     display: flex;
