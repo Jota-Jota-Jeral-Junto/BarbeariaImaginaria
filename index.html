@@ -270,11 +270,30 @@
         <div class="container footer-grid">
             <a class="footer-logo" href="#" aria-label="Barber Shop - Início">Barber <span>Shop</span></a>
 
-            <address class="footer-item footer-endereco">
-                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                <span>Av. Getulio Vargas, 450<br>Centro - Colatina<br>ES - Brasil</span>
-            </address>
-
+            <!-- Endereço clicável que abre no Google Maps -->
+<a 
+    class="footer-item footer-endereco" 
+    href="https://www.google.com/maps/search/?api=1&query=Av.+Getulio+Vargas,+450,+Centro,+Colatina+-+ES" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Ver localização no Google Maps"
+>
+    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+    <span>Av. Getúlio Vargas, 450<br>Centro - Colatina<br>ES - Brasil</span>
+</a>
+        <!-- Mini Mapa do Google Maps -->
+<div class="footer-mapa">
+    <iframe 
+        title="Localização da Barbearia"
+        src="https://maps.google.com/maps?q=Av.%20Getulio%20Vargas,%20450,%20Centro,%20Colatina%20-%20ES&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+        width="100%" 
+        height="180" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
             <a class="footer-item" href="tel:+5500000000000">
                 <i class="fa-solid fa-phone" aria-hidden="true"></i>
                 <span>Contato<br><strong>(27) 99999-9999</strong></span>
